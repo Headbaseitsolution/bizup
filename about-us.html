@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Animation -->
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		<title>About Us</title>
+	</head>
+	<body>
+		<header  class="header ltn__header-transparent" id="header">
+			<div class="container">
+				<div class="row-table">
+					<div class="navbar">
+						
+						<!-- Navbar logo -->
+						<div class="nav-header">
+							<div class="nav-logo">
+								<a href="index.html">
+									<img src="images/white-logo.png" alt="logo">
+								</a>
+							</div>
+						</div>
+						
+						<!-- responsive navbar toggle button -->
+						<input type="checkbox" id="nav-check">
+						<div class="nav-btn">
+							<label for="nav-check">
+								<span></span>
+								<span></span>
+								<span></span>
+							</label>
+						</div>
+						
+						<!-- Navbar items -->
+						<div class="nav-links">
+							<a href="index.html">Home</a>
+							<a href="about-us.html" class="active">About Us</a>
+							<a href="services.html">Services</a>
+							<a href="emergency.html">Emergency</a>
+							<a href="testimonials.html">Testimonials</a>
+							<a href="blog.html">Blog</a>
+							<a href="contact-us.html">Contact</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="breadcrumb">
+			<div class="container">
+				<div class="breadcrumb-block">
+					<h1>About Us</h1>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container">
+				<div class="about-us-block">
+					<div class="about-us-block-1">
+						<img src="images/about-us-image.jpg">
+					</div>
+					<div class="about-us-block-2">
+						<h2>About Tree Works, LLC</h2>
+						<div class="about-us-content">
+							<p>Hi, <span>I'm Josh</span>, I am a Virginia Beach Native. I have been a professional tree climber for the past 14 years. I have learned and trained under some of the best climbers in the area.   I take safety and professionalism very seriously and stay up to date on the latest Arborist practices.  Tree work is what I love to do, and I am grateful to all of my customers. </p>
+							<p>I give you my personal guarantee that I will always provide professional, fast, and affordably priced tree care and tree removal services throughout all of Virginia Beach, VA and Chesapeake, VA.</p>
+							<p>As an environmentally friendly company I make sure all our tree care or tree removal debris is recycled 100 percent of the time.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="call-to-action">
+			<div class="container">
+				<div class="cta-2">
+					<div class="cta-block-2">
+						<h5 class="mb15">Free Estimate</h5>
+						<p class="cta2-title">Contact us today to get a free estimate from one of the areas most qualified tree services.</p>
+					</div>
+					<div class="cta-button-2">
+						<a href="tel:757-692-6094">Contact Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="main-footer">
+				<div class="container-fluid">
+					<div class="footer-sections">
+						<div class="block-1">
+							<a href="#"><img src="images/footer-logo.svg"></a>
+						</div>
+						<div class="block-2">
+							<h6 class="mb30">Quick Links</h6>
+							<ul class="footer-menu-links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="emergency.html">Emergency</a></li>
+								<li><a href="testimonials.html">Testimonials</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact-us.html">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="block-3">
+							<h6 class="mb30">Services We Provide</h6>
+							<ul class="footer-menu-links">
+								<li><a href="#">Tree Removal</a></li>
+								<li><a href="#">Pruning/Trimming</a></li>
+								<li><a href="#">Stump Grinding and Removal</a></li>
+								<li><a href="#">Lot Clearing</a></li>
+								<li><a href="#">General Tree Care</a></li>
+							</ul>
+						</div>
+						<div class="block-4">
+							<h6 class="mb30">Our Location</h6>
+							<ul class="footer-menu-links">
+								<li class="location">Virginia Beach,VA</li>
+								<li class="location">Virginia Beach,VA</li>
+								<li class="location">Norfolk, VA</li>
+								<li class="call"><a href="tel:757-692-6094">757-692-6094</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="bottom-sections">
+						<div class="copyright">
+							<p>&copy; - 2022. Tree Works LLC. All Rights Reserved.</p>
+						</div>
+						<div class="social">
+							<ul>
+								<li><a href="#" target="_blank"><img src="images/facebook.svg"></a></li>
+								<li><a href="#" target="_blank"><img src="images/instagram.svg"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery-1.7.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 50) {
+			$('.header').addClass('header-scrolled');
+				} else {
+					$('.header').removeClass('header-scrolled');
+				}
+			});
+		});
+		</script>
+	</body>
+</html>

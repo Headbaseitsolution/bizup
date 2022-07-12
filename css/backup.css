@@ -1,0 +1,450 @@
+@font-face{font-family:Gordita;src:url(../fonts/Gordita-Black.woff2) format('woff2'),url(../fonts/Gordita-Black.woff) format('woff');font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:Gordita;src:url(../fonts/Gordita-Bold.woff2) format('woff2'),url(../fonts/Gordita-Bold.woff) format('woff');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:Gordita;src:url(../fonts/Gordita-Light.woff2) format('woff2'),url(../fonts/Gordita-Light.woff) format('woff');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:Gordita;src:url(../fonts/Gordita-Medium.woff2) format('woff2'),url(../fonts/Gordita-Medium.woff) format('woff');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:Gordita;src:url(../fonts/Gordita-Regular.woff2) format('woff2'),url(../fonts/Gordita-Regular.woff) format('woff');font-weight:400;font-style:normal;font-display:swap}
+:root {
+    --primary: #000000;
+    --text-color: #292929;
+    --background-color: #F4F4F4;
+    --white:  #ffffff;
+}
+.fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900); }
+*{margin:0;padding:0;box-sizing:border-box}
+/*body,html{font-size:16px;color:var(--text-color);font-family: 'Gordita';vertical-align:baseline;overflow-x:hidden}*/
+h1{font-size:90px;line-height:128px;font-family: 'Gordita';font-weight: bold;color:var(--primary)}
+h2{font-size:45px;line-height:64px;font-family: 'Gordita';font-weight: bold;}
+h3{font-size:38px;font-family: 'Gordita';line-height:48px;}
+h4{font-size:28px;font-family: 'Gordita';line-height:36px;font-weight: 400;}
+h5{font-size:24px;font-family: 'Gordita';line-height:32px;font-weight: 700;}
+h6{font-size:20px;font-family: 'Gordita';line-height:28px;font-weight: 500;}
+p{font-size: 16px;line-height:24px;font-family: 'Gordita';font-weight: 400;}
+a{text-decoration: none;}
+li{list-style: none;}
+/*img{max-width:100%;height:auto}*/
+.pt100{padding-top:100px}
+.pt70{padding-top:70px}
+.pt200{padding-top:200px}
+.pb210{padding-bottom:210px}
+.pb45{padding-bottom:45px}
+.pb70{padding-bottom:70px}
+.pb100{padding-bottom:100px}
+.mb15{margin-bottom:15px}
+.mt15{margin-top:15px}
+.mb13{margin-bottom:13px}
+.mb20{margin-bottom:20px}
+.mb22{margin-bottom:22px}
+.mb30{margin-bottom:30px}
+.mb50{margin-bottom:50px}
+.mb70{margin-bottom:70px}
+.container{width:1440px;margin:0 auto;justify-content:space-around;align-items:center;max-width:100%}
+/* Menu Area */
+.nav-logo img {width: 100px}
+.navbar {display: flex;justify-content: space-between;align-items: center;padding: 15px 0px;}
+.navbar .nav-header{display:inline}
+.navbar .nav-header .nav-logo{display:inline-block}
+.navbar .nav-links{display:flex;float:right;grid-gap: 50px;}
+.navbar .nav-links a{padding:10px 0px;text-decoration:none;color: var(--white);font-family: 'Gordita';font-weight: 500;}
+.navbar .nav-links a:hover{color: var(--white) !important;border-top: 1px solid var(--white);border-bottom: 1px solid var(--white);}
+.navbar #nav-check,.navbar .nav-btn{display:none}
+.dropdown{position:relative;display:inline-block}
+.drop-content{display:none;position:absolute;background-color:#fff;width:200px;font-size:16px;top:34px;z-index:1;box-shadow:0 10px 25px rgba(0,0,0,0.4)}
+.dropdown:hover .drop-content{display:block}
+.drop-content a{padding:12px 10px;border-bottom:1px solid #e0e0e0;display:block;transition:all .5s ease!important}
+.dropBtn .drop-content a:hover{background-color:#e6e6e6}
+a.active {color: var(--white) !important;border-top: 1px solid var(--white);border-bottom: 1px solid var(--white);}
+.ltn__header-transparent{position:absolute;width:100%;z-index:999;background-color:transparent}
+.header-scrolled{background-color:rgb(0 0 0) !important}
+header#header{position:fixed;width:100%;left:0;z-index:9999;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;transition:all .3s ease;background: rgba(0, 0, 0, 0.7);}
+/* Padding */
+.contact, .blog, .testimonials, .service, .our-guarantee, .services-we-provide, .why-treework-llc, .about {padding: 100px 0px;}
+/* Heading 1 */
+.heading{text-align:center;margin-left:auto;margin-right:auto;display: flex;justify-content: space-around;margin-bottom: 70px;}
+.heading p{width:636px;margin-left:auto;margin-right:auto}
+.heading h2{border-top:4px solid var(--primary);border-bottom:4px solid var(--primary);width:fit-content;padding:10px 30px;text-align: center;}
+/* Heading 2 */
+.heading2{display:flex;flex-direction:column;grid-gap:30px;align-items:center;margin-bottom:70px}
+.heading2 h2{border-top:4px solid var(--primary);border-bottom:4px solid var(--primary);width:fit-content;padding:10px 30px;text-align: center;}
+.heading2 p{width:636px;margin-left:auto;margin-right:auto;text-align:center}
+/* Heading 3 */
+.heading3{display:flex;flex-direction:column;align-items:center;grid-gap:30px;margin-bottom:70px}
+.heading3 h2{border-top:4px solid var(--primary);border-bottom:4px solid var(--primary);width:fit-content;padding:10px 30px;text-align: center;}
+.emergency-content-paragraph{width:636px;margin-left:auto;margin-right:auto;text-align:center;display:flex;flex-direction:column;grid-gap:15px}
+/****************************************************************************
+                                Homepage
+****************************************************************************/
+.bz-banner{background-image:url("../images/banner-image.jpg");background-size:cover;background-repeat:no-repeat;background-position:center center;height: 100vh;display: flex;align-items: center;}
+.y-middle{display:flex;flex-direction:row;justify-content:center;grid-gap:25px}
+.y-middle .title{font-style:normal;font-size:90px;line-height:128px;text-align:center;color:#FFF;max-width:80%}
+.bz-banner img{justify-content:center;margin-left:auto;margin-right:auto;display:block}
+a.scroll-btn{position:absolute;left:50%;bottom:70px;margin-left:-20px;z-index:1;animation:jumpTwo 5s infinite linear}
+/* Section 2 */
+.tree-work-llc {padding-top: 100px;}
+.about-section{display:grid;flex-direction:row;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.about-content{padding:150px 100px;display:flex;flex-direction:column;justify-content:center}
+.about-content h4{color:var(--text-color);margin-bottom: 30px;}
+.about-banner img{display:flex;width: 100%;}
+ul.company-location h5{display:flex;align-items:center;grid-gap:10px}
+ul.company-location{display:flex;flex-direction:column;grid-gap:15px}
+h5.licensed{background:var(--background-color);border-left:4px solid #000;display:flex;flex-direction:row;align-items:center;padding:30px;gap:10px;font-weight: 400;}
+h5.licensed span {font-weight: 700;}
+/* Section 3 */
+.guarantee{display:grid;grid-gap:30px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.guarantee-block{display:flex;flex-direction:column;align-items:center;padding:70px 30px;gap:30px;background:var(--background-color);border-radius:50px;transition: all 0.4s;}
+.guarantee-block:hover{transition:all .4s;background-color:#000;color:#fff}
+img.guarantee-icon1{display:none}
+.guarantee-block:hover img.guarantee-icon1{display:inline}
+.guarantee-block:hover img.guarantee-icon{display:none}
+/* Section 4 */
+.free-estimate-light{background:rgba(247,247,247,.45);padding: 70px 0px;}
+.cta-free-estimate{font-family:Gordita;font-style:normal;font-weight:700;font-size:18px;line-height:26px;color:var(--text-color)}
+.cta{display:flex;justify-content:space-between;align-items:center}
+.cta-block h6{font-family:Gordita;font-style:normal;font-weight:700;font-size:18px;line-height:26px}
+.cta-block h5{font-family:Gordita;font-style:normal;font-weight:400;font-size:24px;line-height:32px}
+.cta-button a{display:flex;flex-direction:row;align-items:center;padding:15px 30px;gap:10px;background:#000;border:4px solid #000;justify-content:space-between;color:#fff;font-family:Gordita;font-style:normal;font-weight:500;font-size:16px;line-height:23px;transition:all .4s}
+.cta-button a:hover{background-color:transparent;color:#000;transition:all .4s}
+.cta-button {width: fit-content;}
+.cta-button a:before{content:"\f095";font-family:"Font Awesome 6 Pro";width:24px;height:24px;display:flex;align-items:center;justify-content:center}
+/* Section 5 */
+.why-treework-llc {background: rgba(247, 247, 247, 0.45);}
+.services{display:flex;grid-gap:30px;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));flex-wrap: wrap;justify-content: center;}
+.services-block h5{display:flex;flex-direction:column;align-items:center;padding:50px 30px;gap:15px}
+.services .services-block{display:flex;flex-direction:column;padding:0;background:var(--background-color);border-radius:50px}
+.services-block img{border-radius:50px 50px 0 0}
+/* Section 6 */
+.why-choose-us{display:grid;grid-gap:30px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.why-choose-us-block{display:flex;flex-direction:column;align-items:center;padding:70px 30px;gap:50px;background:var(--background-color);border-radius:50px;transition:all .4s;text-align:center}
+.why-choose-us-block:hover{transition:all .4s;background-color:#000;color:#fff}
+.why-choose-us-block:hover .wcu,img.wcu-white-image{display:none}
+.why-choose-us-block:hover .wcu-white-image{display:block}
+/* Footer */
+.footer-sections{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;gap:185px;padding:100px 240px;background:var(--background-color)}
+.footer-sections ul li{font-family:Gordita;font-style:normal;font-weight:400;font-size:16px;line-height:24px}
+.footer-sections ul li a{color:var(--text-color)}
+.block-2 ul li a:before,.block-3 ul li a:before{content:"\f105";font-family:"Font Awesome 6 Pro";padding-right:12px}
+.block-4 ul li.location:before{content:"\f3c5";font-family:"Font Awesome 6 Pro";padding-right:12px}
+.block-4 ul li a:before{content:"\f095";font-family:"Font Awesome 6 Pro";padding-right:12px}
+ul.footer-menu-links{display:flex;flex-direction:column;align-items:flex-start;padding:0;gap:15px}
+.footer-sections h6 {margin-bottom: 30px;}
+/* Bottom Footer Section */
+.bottom-sections{display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:20px 240px;gap:10px;background:#000;color:#fff}
+.social ul{display:flex;flex-direction:row;align-items:flex-start;padding:0;gap:13px}
+.social ul li a{color:#FFF;width:24px;height:24px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px}
+/****************************************************************************
+                                About Us Page
+****************************************************************************/
+.breadcrumb{background-image:url(../images/banner-image.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;height:60vh}
+.breadcrumb-block{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0;height:60vh}
+.breadcrumb-block h1{color:var(--white)}
+header#header2{width:100%;left:0;z-index:9999;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;transition:all .3s ease;background:rgba(0,0,0,.7)}
+.about-us-block{display:grid;grid-gap:0;grid-template-columns:1fr 2fr;align-items:center}
+.about-us-block-1 img {display: flex;}
+.about-us-block-2{display:flex;flex-direction:column;padding:100px 70px;gap:30px;text-align:left}
+.about-us-content{display:flex;flex-direction:column;align-items:flex-start;padding:0;gap:15px}
+.about-us-content span{font-weight:700}
+.call-to-action{background-color:#000;color:#fff;padding: 70px 0px;}
+.cta-2{display:flex;justify-content:space-between;align-items:center}
+.cta-block-2 p{font-family:Gordita;font-style:normal;font-weight:400;font-size:18px;line-height:26px}
+.cta-button-2 a{display:flex;flex-direction:row;align-items:center;padding:15px 30px;gap:10px;background:#fff;border:4px solid #fff;justify-content:space-between;color:#000;font-family:Gordita;font-style:normal;font-weight:500;font-size:16px;line-height:23px;transition:all .4s}
+.cta-button-2 a:hover{background:0 0;color:#fff;transition:all .4s}
+.cta-button-2 a:before{content:"\f095";font-family:"Font Awesome 6 Pro";width:24px;height:24px;display:flex;align-items:center;justify-content:center}
+/****************************************************************************
+                                Services Page
+****************************************************************************/
+.breadcrumb-service-block{background-image:url(../images/service-breadcrumb-bg.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;height:60vh}
+.service-left-image,.service-right-image{display:grid;align-items:center;grid-template-columns:repeat(auto-fit,minmax(500px,1fr))}
+.service-block-1{display:flex}
+.service-block-2{padding:0 70px}
+.service-block-1 img, .service-block-4 img {border-radius: 25px;}
+.service-content p a{font-weight:500;color:var(--primary);text-decoration-line:underline}
+.service-variety-section{display:flex;flex-direction:row;justify-content:space-between;align-items:center}
+.service-variety-content{padding:150px 100px 150px 300px;background:var(--background-color)}
+.service-variety1{float:left;width:50%;display:flex}
+.service-variety2{float:left;width:50%;padding:150px 100px 150px 300px;display:flex;align-items:center;background:var(--background-color)}
+.for-service-variety{display:flex;overflow:hidden}
+.services-list {display: flex;flex-direction: column;grid-gap: 70px;}
+/****************************************************************************
+                                Emergency Page
+****************************************************************************/
+.breadcrumb-emergency-block{background-image:url(../images/emergency-breadcrumb-bg.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;height:60vh}
+.emergencygallery-images{display:flex;grid-gap:10px}
+.gallery-column.gallery a{display:flex}
+/****************************************************************************
+                                Testimonials Page
+****************************************************************************/
+.breadcrumb-testimonials-block{background-image:url(../images/testimonials-breadcrumb-bg.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;height:60vh}
+.single-testimonial-quote{display:flex;flex-direction:column;align-items:flex-start;padding:70px 50px 50px;top:50px;background:rgba(247,247,247,.45);border-radius:25px;height:209px;justify-content:flex-end}
+.single-testimonial-quote h5{font-weight:700;font-size:18px;line-height:26px}
+.testimonial-block-location{font-weight:300}
+.testimonial-for-mobile {display: flex;flex-direction: column;grid-gap: 70px;}
+/****************************************************************************
+                                Testimonials2 Page
+****************************************************************************/
+.testimonial2-for-mobile {
+    justify-items: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+}
+.testimonials-quote-block2 {
+    padding: 50px;
+    background: rgba(247, 247, 247, 0.45);
+    border-radius: 50px;
+    width: 100%;
+}
+.single-testimonial-quote2 img {
+    margin-bottom: 30px;
+}
+.testimonials-quote-block2 p.testimmonial-comment {
+    margin-bottom: 15px;
+}
+/****************************************************************************
+                                Blog Page
+****************************************************************************/
+.breadcrumb-blog-block{background-image:url(../images/blog-breadcrumb-bg.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;height:60vh}
+.blog-block{display:grid;grid-gap:30px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));text-align:center}
+.blog-column img{display:flex;border-radius:50px 50px 0 0;width: 100%;}
+.blog-content{padding:30px;background:var(--background-color);border-radius:0 0 50px 50px;transition: all .4s;}
+.blog-content:hover{padding:30px;background:var(--primary);border-radius:0 0 50px 50px;color:var(--white);transition: all .4s;}
+.blog-content a{font-family:Gordita;font-style:normal;font-weight:500;font-size:24px;line-height:32px;text-align:center;color:var(--primary)}
+.blog-content:hover a{color:var(--white)}
+/****************************************************************************
+                                Blog Single Page
+****************************************************************************/
+.single-blog-block img{width:100%;display:flex}
+.single-blog-content{display:flex;flex-direction:column;grid-gap:15px}
+.single-blog-content h5{font-family:Gordita;font-style:normal;font-weight:500;font-size:18px;line-height:26px;text-decoration-line:underline}
+/****************************************************************************
+                                Contact us Page
+****************************************************************************/
+.breadcrumb-contact-block{background-image:url(../images/contact-us-bg.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;height:60vh}
+.contact-us-block{display:grid;grid-gap:30px;grid-template-columns:1fr 2fr;align-items:center}
+.contact-us-address{display:flex;flex-direction:column;align-items:flex-start;padding:0 70px;gap:30px;background:#000;border-radius:25px;height:100%;justify-content:center}
+.contact-us-address h6,ul.contact-us-links li a{color:var(--white)}
+ul.contact-us-links li{color:var(--white);font-family:Gordita;font-style:normal;font-weight:400;font-size:16px;line-height:24px}
+ul.contact-us-links{display:flex;flex-direction:column;align-items:flex-start;padding:0;gap:15px}
+ul.contact-us-links li.location:before{content:"\f3c5";font-family:"Font Awesome 6 Pro";padding-right:12px}
+ul.contact-us-links li.call:before{content:"\f095";font-family:"Font Awesome 6 Pro";padding-right:12px}
+.form{display:grid;flex-direction:row;align-items:flex-start;gap:30px;flex-wrap:wrap;padding:70px;background:var(--background-color);border-radius:25px}
+.input1,.input2{display:grid;grid-gap:30px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.form-control{padding:10px;border:none;border-bottom:1px solid var(--text-color);width:100%;font-family:Gordita;font-style:normal;font-weight:400;font-size:16px;line-height:24px;color:var(--text-color);background:var(--background-color)}
+textarea#for-textares{padding:10px;width:100%;border:none;border-bottom:1px solid var(--text-color);font-family:Gordita;font-style:normal;font-weight:400;font-size:16px;line-height:24px;color:var(--text-color);background:var(--background-color)}
+input.submit{padding:15px 30px;background:#000;border:4px solid #000;color:#fff;font-family:Gordita;font-style:normal;font-weight:500;font-size:16px;line-height:23px;transition:all .4s;width:fit-content;margin-left:auto}
+/****************************************************************************
+                                Media Query CSS
+****************************************************************************/
+@media only screen and (min-width:320px) and (max-width:374px),(max-width:424px){
+    h1{font-size:30px !important;line-height:38px !important;}
+    h2{font-size:25px !important;line-height:33px !important;}
+    h3{font-size:20px !important;line-height:28px !important;}
+    h4{font-size:18px !important;line-height:26px !important;}
+    h5{font-size:16px !important;line-height:24px !important;}
+    p{font-size:14px !important;line-height:22px !important;}
+    .nav-logo img {width: 70px}
+    .navbar {padding: 30px 15px;}
+    .navbar .nav-btn{display:inline-block;right:0}
+    .navbar .nav-btn label span{display:block;height:10px;width:25px;border-top:3px solid var(--white)}
+    .navbar .nav-btn label:hover,.navbar #nav-check:checked ~ .nav-btn label{transition:all .5s ease}
+    .navbar .nav-links{position:absolute;display:block;text-align:center;width:70%;background-color:#ffffff;transition:all .3s ease-in;overflow-y:hidden;top:70px;right:0}
+    .navbar .nav-links a{display:block;border: none;padding: 20px 50px;text-align: left;}
+    .navbar #nav-check:not(:checked) ~ .nav-links{height:0}
+    .navbar #nav-check:checked ~ .nav-links{height:calc(100vh - 70px);overflow-y:hidden}
+    .navbar .nav-links .loginBtn{padding:10px 40px;margin:20px;font-size:18px;font-weight:bold;color:#090e5a}
+    .navbar .nav-links .dropdown,.navbar .nav-links .dropdown2{float:none;width:100%}
+    .navbar .nav-links .drop-content,.navbar .nav-links .drop-content2{position:relative;background-color:#fafafa;top:0;left:0;width: 100%;box-shadow: none;}
+    .navbar .nav-links .drop-content a{color:#090e5a}
+    .breadcrumb, .breadcrumb-block, .breadcrumb-service-block, .breadcrumb-blog-block, .breadcrumb-contact-block, .breadcrumb-testimonials-block, .breadcrumb-emergency-block {height: 25vh;}
+    .breadcrumb-block h1 {margin-top: 60px;}
+    .navbar {padding: 10px 15px;}
+    .navbar .nav-links {background-color: #000000;top: 88px;}
+    .navbar .nav-links a:hover {border: none;color: rgb(255 255 255 / 62%) !important;}
+    .cta-button-2 a, input.submit, .cta-button a {padding: 7px 18px;font-size: 14px;line-height: 22px;gap: 4px;}
+    .bz-banner {height: 40vh;}
+    a.scroll-btn {bottom: initial;margin-top: 50px;}
+    .bz-banner img {width: 70%;}
+    h5.licensed {display: inline;padding: 20px;}
+    .guarantee-block h5, .why-choose-us-block h5 {font-size: 16px !important;line-height: 24px !important;text-align: center;}
+    .guarantee-block {padding: 30px;gap: 15px;border-radius: 15px;}
+    .why-choose-us-block img {width: 100px;}
+    .about-us-block, .about-section {display: flex;flex-direction: column;}
+    .about-us-block-2, .form, .contact-us-address{padding: 20px;gap: 15px;}
+    .services .services-block{border-radius: 15px;}
+    .service-block-1, .service-block-4 {display: flex;}
+    .service-block-1 img, .service-block-4 img {border-radius: 0;}
+    .for-service-variety {flex-direction: column-reverse;}
+    .service-variety2{width: 100%;padding: 50px 20px;}
+    .services-block h5 {padding: 30px;text-align: center;}
+    .services-block img, .blog-column img {border-radius: 15px 15px 0 0;}
+    .blog-content, .blog-content:hover{border-radius: 0 0 15px 15px;}
+    .contact-us-address {width: 100%;}
+    .service-block-2 {border-width: 0px 1px 1px 1px;border-style: solid;border-color: var(--background-color);}
+    .service-left-image{grid-template-columns: auto;}
+    .service-right-image {display: flex;flex-direction: column-reverse;}
+    .emergencygallery-images, .input1, .input2 {display: grid;grid-gap: 15px;flex-wrap: wrap;grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+    .testimonial2-for-mobile{grid-gap: 15px;grid-template-columns: repeat(auto-fit,minmax(200px,1fr));}
+    .single-testimonial-quote2 img{width: 15%;}
+    .blog-content a{font-size: 18px;line-height: 26px;}
+    .contact-us-block{display: flex;flex-direction: column;text-align: center;grid-gap: 15px;}
+    .cta, .call-to-action, .cta-2{flex-direction: column;text-align: center;grid-gap: 15px;}
+    .cta-block h6, .single-blog-content h5.subheading{margin-bottom: 0px;}
+    .footer-sections {flex-direction: column;gap: 30px;padding: 50px 20px;}
+    .footer-sections h6 {font-size: 16px;}
+    .footer-sections ul li a, .footer-sections ul li {font-size: 14px;line-height: 22px;}
+    /* Global */
+    .heading2 p, .services-block, .about-us-block-1 img, .service-block-1 img, .service-block-4 img, .service-variety1 img, .service-variety1, .emergency-content-paragraph, .gallery-column.gallery img, .footer-sections img{width: 100%;}
+    .heading2, .heading {margin-bottom: 30px;}
+    .footer-sections h6, .about-content h4, ul.company-location, .for-emergency-mobile, .single-blog-block h5, .single-blog-block img {margin-bottom: 15px;}
+    .tree-work-llc {padding: 50px 20px 0px;}
+    .about-content, .service-block-2{padding: 20px;}
+    .our-guarantee, .free-estimate-light, .services-we-provide, .why-treework-llc, .call-to-action, .about, .service, .testimonials, .blog, .contact {padding: 50px 20px;}
+    .why-choose-us-block {grid-gap: 30px;}
+    .guarantee, .heading2, .services, .why-choose-us, .heading3, .blog-block, .services-list {grid-gap: 15px;}
+    ul.footer-menu-links, ul.company-location, .about-us-content, .single-blog-content, ul.contact-us-links {grid-gap: 10px;}
+    .bottom-sections {flex-direction: column;padding: 15px 10px;text-align: center;}
+    /* End Global CSS */
+}
+@media only screen and (min-width:425px) and (max-width:587px){
+    h1{font-size:35px !important;line-height:43px !important;}
+    h2{font-size:28px !important;line-height:38px !important;}
+    h3{font-size:25px !important;line-height:33px !important;}
+    h4{font-size:20px !important;line-height:28px !important;}
+    h5{font-size:18px !important;line-height:26px !important;}
+    p{font-size:15px !important;line-height:23px !important;}
+    .nav-logo img {width: 80px}
+    .navbar {padding: 30px 15px;}
+    .navbar .nav-btn{display:inline-block;right:0}
+    .navbar .nav-btn label span{display:block;height:10px;width:25px;border-top:3px solid var(--white)}
+    .navbar .nav-btn label:hover,.navbar #nav-check:checked ~ .nav-btn label{transition:all .5s ease}
+    .navbar .nav-links{position:absolute;display:block;text-align:center;width:70%;background-color:#ffffff;transition:all .3s ease-in;overflow-y:hidden;top:70px;right:0}
+    .navbar .nav-links a{display:block;border: none;padding: 20px 50px;text-align: left;}
+    .navbar #nav-check:not(:checked) ~ .nav-links{height:0}
+    .navbar #nav-check:checked ~ .nav-links{height:calc(100vh - 70px);overflow-y:hidden}
+    .navbar .nav-links .loginBtn{padding:10px 40px;margin:20px;font-size:18px;font-weight:bold;color:#090e5a}
+    .navbar .nav-links .dropdown,.navbar .nav-links .dropdown2{float:none;width:100%}
+    .navbar .nav-links .drop-content,.navbar .nav-links .drop-content2{position:relative;background-color:#fafafa;top:0;left:0;width: 100%;box-shadow: none;}
+    .navbar .nav-links .drop-content a{color:#090e5a}
+    .breadcrumb, .breadcrumb-block, .breadcrumb-service-block, .breadcrumb-blog-block, .breadcrumb-contact-block, .breadcrumb-testimonials-block, .breadcrumb-emergency-block {height: 25vh;}
+    .breadcrumb-block h1 {margin-top: 60px;}
+    .navbar {padding: 10px 15px;}
+    .navbar .nav-links {background-color: #000000;top: 88px;}
+    .navbar .nav-links a:hover {border: none;color: rgb(255 255 255 / 62%) !important;}
+    .cta-button-2 a, input.submit, .cta-button a {padding: 7px 18px;font-size: 14px;line-height: 22px;gap: 4px;}
+    .bz-banner {height: 40vh;}
+    a.scroll-btn {bottom: initial;margin-top: 50px;}
+    .bz-banner img {width: 70%;}
+    h5.licensed {display: inline;padding: 20px;}
+    .guarantee-block h5, .why-choose-us-block h5 {font-size: 16px !important;line-height: 24px !important;text-align: center;}
+    .guarantee-block {padding: 30px;gap: 15px;border-radius: 15px;}
+    .why-choose-us-block img {width: 100px;}
+    .about-us-block, .about-section {display: flex;flex-direction: column;}
+    .about-us-block-2, .form, .contact-us-address{padding: 20px;gap: 15px;}
+    .services {display: grid;grid-template-columns: repeat(auto-fit,minmax(200px,1fr));grid-gap: 20px;}
+    .services .services-block {border-radius: 15px;}
+    .service-block-1, .service-block-4 {display: flex;}
+    .service-block-1 img, .service-block-4 img {border-radius: 0;}
+    .for-service-variety {flex-direction: column-reverse;}
+    .service-variety2{width: 100%;padding: 50px 20px;}
+    .services-block h5 {padding: 30px;text-align: center;}
+    .services-block img, .blog-column img {border-radius: 20px 20px 0 0;}
+    .blog-content, .blog-content:hover {border-radius: 0 0 20px 20px;}
+    .contact-us-address {width: 100%;}
+    .service-block-2 {border-width: 0px 1px 1px 1px;border-style: solid;border-color: var(--background-color);}
+    .service-left-image{grid-template-columns: auto;}
+    .service-right-image {display: flex;flex-direction: column-reverse;}
+    .emergencygallery-images, .input1, .input2 {display: grid;grid-gap: 20px;flex-wrap: wrap;grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+    .testimonial2-for-mobile{grid-gap: 15px;grid-template-columns: repeat(auto-fit,minmax(200px,1fr));}
+    .single-testimonial-quote2 img{width: 15%;}
+    .blog-content a{font-size: 18px;line-height: 26px;}
+    .contact-us-block{display: flex;flex-direction: column;text-align: center;grid-gap: 15px;}
+    .cta, .call-to-action, .cta-2{flex-direction: column;text-align: center;grid-gap: 20px;}
+    .cta-block h6, .single-blog-content h5.subheading{margin-bottom: 0px;}
+    .footer-sections {gap: 20px;display: grid;padding: 60px 20px;grid-template-columns: repeat(auto-fit,minmax(200px,1fr));}
+    .footer-sections h6 {font-size: 16px;}
+    .footer-sections ul li a, .footer-sections ul li {font-size: 14px;line-height: 22px;}
+    /* Global */
+    .heading2 p, .services-block, .about-us-block-1 img, .service-block-1 img, .service-block-4 img, .service-variety1 img, .service-variety1, .emergency-content-paragraph, .gallery-column.gallery img, .footer-sections img{width: 100%;}
+    .heading2, .heading {margin-bottom: 30px;}
+    .footer-sections h6, .about-content h4, ul.company-location, .for-emergency-mobile, .single-blog-block h5, .single-blog-block img {margin-bottom: 15px;}
+    .tree-work-llc {padding: 50px 20px 0px;}
+    .about-content, .service-block-2{padding: 20px;}
+    .our-guarantee, .free-estimate-light, .services-we-provide, .why-treework-llc, .call-to-action, .about, .service, .testimonials, .blog, .contact {padding: 60px 20px;}
+    .why-choose-us-block {grid-gap: 30px;}
+    .guarantee, .heading2, .why-choose-us, .heading3, .blog-block {grid-gap: 20px;}
+    ul.footer-menu-links, ul.company-location, .about-us-content, .single-blog-content, ul.contact-us-links {grid-gap: 15px;}
+    .bottom-sections {flex-direction: column;padding: 15px 10px;text-align: center;}
+    /* End Global CSS */
+}
+@media only screen and (min-width:588px) and (max-width:767px),(min-width:768px) and (max-width:899px){
+    h1{font-size:45px !important;line-height:53px !important;}
+    h2{font-size:35px !important;line-height:43px !important;}
+    h3{font-size:25px !important;line-height:33px !important;}
+    h4{font-size:20px !important;line-height:28px !important;}
+    h5{font-size:18px !important;line-height:26px !important;}
+    p{font-size:16px !important;line-height:24px !important;}
+    .nav-logo img {width: 70px}
+    .navbar {padding: 30px 15px;}
+    .navbar .nav-btn{display:inline-block;right:0}
+    .navbar .nav-btn label span{display:block;height:10px;width:25px;border-top:3px solid var(--white)}
+    .navbar .nav-btn label:hover,.navbar #nav-check:checked ~ .nav-btn label{transition:all .5s ease}
+    .navbar .nav-links{position:absolute;display:block;text-align:center;width:70%;background-color:#ffffff;transition:all .3s ease-in;overflow-y:hidden;top:70px;right:0}
+    .navbar .nav-links a{display:block;border: none;padding: 20px 50px;text-align: left;}
+    .navbar #nav-check:not(:checked) ~ .nav-links{height:0}
+    .navbar #nav-check:checked ~ .nav-links{height:calc(100vh - 70px);overflow-y:hidden}
+    .navbar .nav-links .loginBtn{padding:10px 40px;margin:20px;font-size:18px;font-weight:bold;color:#090e5a}
+    .navbar .nav-links .dropdown,.navbar .nav-links .dropdown2{float:none;width:100%}
+    .navbar .nav-links .drop-content,.navbar .nav-links .drop-content2{position:relative;background-color:#fafafa;top:0;left:0;width: 100%;box-shadow: none;}
+    .navbar .nav-links .drop-content a{color:#090e5a}
+    .breadcrumb, .breadcrumb-block, .breadcrumb-service-block, .breadcrumb-blog-block, .breadcrumb-contact-block, .breadcrumb-testimonials-block, .breadcrumb-emergency-block {height: 50vh;}
+    .breadcrumb-block h1 {margin-top: 60px;}
+    .navbar {padding: 10px 15px;}
+    .navbar .nav-links {background-color: #000000;top: 88px;}
+    .navbar .nav-links a:hover {border: none;color: rgb(255 255 255 / 62%) !important;}
+    .cta-button-2 a, input.submit, .cta-button a {padding: 7px 18px;font-size: 14px;line-height: 22px;gap: 4px;}
+    .bz-banner {height: 40vh;}
+    a.scroll-btn {bottom: initial;margin-top: 50px;}
+    .bz-banner img {width: 70%;}
+    h5.licensed {display: inline;padding: 20px;}
+    .guarantee-block h5, .why-choose-us-block h5 {font-size: 16px !important;line-height: 24px !important;text-align: center;}
+    .guarantee-block {padding: 30px;gap: 15px;border-radius: 15px;}
+    .why-choose-us-block img {width: 100px;}
+    .about-us-block, .about-section {display: flex;flex-direction: column;}
+    .about-us-block-2, .form, .contact-us-address{padding: 20px;gap: 15px;}
+    .services .services-block{border-radius: 15px;}
+    .service-block-1, .service-block-4 {display: flex;}
+    .service-block-1 img, .service-block-4 img {border-radius: 0;}
+    .for-service-variety {flex-direction: column-reverse;}
+    .service-variety2{width: 100%;padding: 50px 20px;}
+    .services-block h5 {padding: 30px;text-align: center;}
+    .services-block img, .blog-column img {border-radius: 15px 15px 0 0;}
+    .blog-content, .blog-content:hover{border-radius: 0 0 15px 15px;}
+    .contact-us-address {width: 100%;}
+    .service-block-2 {border-width: 0px 1px 1px 1px;border-style: solid;border-color: var(--background-color);}
+    .service-left-image{grid-template-columns: auto;}
+    .service-right-image {display: flex;flex-direction: column-reverse;}
+    .emergencygallery-images, .input1, .input2 {display: grid;grid-gap: 15px;flex-wrap: wrap;grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+    .testimonial2-for-mobile{grid-gap: 15px;grid-template-columns: repeat(auto-fit,minmax(200px,1fr));}
+    .single-testimonial-quote2 img{width: 15%;}
+    .blog-content a{font-size: 18px;line-height: 26px;}
+    .contact-us-block{display: flex;flex-direction: column;text-align: center;grid-gap: 15px;}
+    .cta, .call-to-action, .cta-2{flex-direction: column;text-align: center;grid-gap: 15px;}
+    .cta-block h6, .single-blog-content h5.subheading{margin-bottom: 0px;}
+    .footer-sections {flex-direction: column;gap: 30px;padding: 50px 20px;}
+    .footer-sections h6 {font-size: 16px;}
+    .footer-sections ul li a, .footer-sections ul li {font-size: 14px;line-height: 22px;}
+    /* Global */
+    .heading2 p, .services-block, .about-us-block-1 img, .service-block-1 img, .service-block-4 img, .service-variety1 img, .service-variety1, .emergency-content-paragraph, .gallery-column.gallery img, .footer-sections img{width: 100%;}
+    .heading2, .heading {margin-bottom: 30px;}
+    .footer-sections h6, .about-content h4, ul.company-location, .for-emergency-mobile, .single-blog-block h5, .single-blog-block img {margin-bottom: 15px;}
+    .tree-work-llc {padding: 50px 20px 0px;}
+    .about-content, .service-block-2{padding: 20px;}
+    .our-guarantee, .free-estimate-light, .services-we-provide, .why-treework-llc, .call-to-action, .about, .service, .testimonials, .blog, .contact {padding: 50px 20px;}
+    .why-choose-us-block {grid-gap: 30px;}
+    .guarantee, .heading2, .services, .why-choose-us, .heading3, .blog-block, .services-list {grid-gap: 15px;}
+    ul.footer-menu-links, ul.company-location, .about-us-content, .single-blog-content, ul.contact-us-links {grid-gap: 10px;}
+    .bottom-sections {flex-direction: column;padding: 15px 10px;text-align: center;}
+    /* End Global CSS */
+}
